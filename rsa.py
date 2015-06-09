@@ -88,7 +88,7 @@ def KeyGen(bitlen):
     fi = (p-1) * (q-1) # вычисляется значение функции Эйлера
     e = 17  # простые числа Ферма 17, 257 или 65537 взаимнопростое с fi
     d = modinv(e, fi) # используем расширенный алгоритм Евклида
-    pub_key = "{}\n{}".format(e, n)
+    pub_key = "{}\n{}".format(e, n) 
     priv_key = "{}\n{}".format(d, n)
 
     return 	pub_key, priv_key, n, e
